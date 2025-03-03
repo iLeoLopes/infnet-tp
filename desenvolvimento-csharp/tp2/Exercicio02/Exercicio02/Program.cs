@@ -19,9 +19,9 @@ class Program
             int diasRestantes = (aniversarioEsteAno - hoje).Days + 1;
             Console.WriteLine($"Faltam {diasRestantes} dias para o seu aniversário!");
         }
-        catch
+        catch(Exception ex)
         {
-            Console.WriteLine("Data inválida.");
+            Console.WriteLine($"Data inválida.\n{ex.Message}");
         }
     }
 }

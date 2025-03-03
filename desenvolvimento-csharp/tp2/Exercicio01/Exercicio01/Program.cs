@@ -32,9 +32,10 @@ namespace Exercicio01
                 }
                 
                 Console.WriteLine($"Você tem {anos} anos, {meses} meses e {dias} dias.");
-            } catch
+            }
+            catch (Exception ex)
             {
-                Console.WriteLine("Data inválida.");
+                Console.WriteLine($"Data inválida.\n{ex.Message}");
             }
         }
     }
