@@ -6,8 +6,10 @@
         {
             Console.Write("Qual número estou pensando? ");
             int tentativaDoUsuario = int.Parse(Console.ReadLine());
+            
             Random numeroAleatorio = new Random();
             int numeroPensado = numeroAleatorio.Next(1, 100);
+            
             while (tentativaDoUsuario != numeroPensado)
             {
                 if (tentativaDoUsuario < numeroPensado)
